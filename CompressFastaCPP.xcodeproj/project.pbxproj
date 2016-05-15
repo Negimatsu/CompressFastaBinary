@@ -25,6 +25,13 @@
 /* Begin PBXFileReference section */
 		E33C9F881C6783EF003D7598 /* CompressFastaCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CompressFastaCPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33C9F8B1C6783EF003D7598 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E3D33F661CE8D61F00EA2F8C /* StrategyConvertFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyConvertFile.h; sourceTree = "<group>"; };
+		E3D33F691CE8D73E00EA2F8C /* CompressFasta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressFasta.h; sourceTree = "<group>"; };
+		E3D33F6A1CE8D74C00EA2F8C /* ExtractFasta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtractFasta.h; sourceTree = "<group>"; };
+		E3D33F6C1CE8D7D300EA2F8C /* ConvertSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertSequence.h; sourceTree = "<group>"; };
+		E3D33F6D1CE8D7F500EA2F8C /* DNASequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNASequence.h; sourceTree = "<group>"; };
+		E3D33F6E1CE8D80900EA2F8C /* RNASequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNASequence.h; sourceTree = "<group>"; };
+		E3D33F6F1CE8DE0F00EA2F8C /* Fasta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fasta.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +64,40 @@
 		E33C9F8A1C6783EF003D7598 /* CompressFastaCPP */ = {
 			isa = PBXGroup;
 			children = (
+				E3D33F701CE8DF1B00EA2F8C /* FastaQ */,
+				E3D33F6B1CE8D79900EA2F8C /* ConvertSequence */,
+				E3D33F681CE8D71A00EA2F8C /* Fasta */,
 				E33C9F8B1C6783EF003D7598 /* main.cpp */,
+				E3D33F661CE8D61F00EA2F8C /* StrategyConvertFile.h */,
 			);
 			path = CompressFastaCPP;
+			sourceTree = "<group>";
+		};
+		E3D33F681CE8D71A00EA2F8C /* Fasta */ = {
+			isa = PBXGroup;
+			children = (
+				E3D33F691CE8D73E00EA2F8C /* CompressFasta.h */,
+				E3D33F6A1CE8D74C00EA2F8C /* ExtractFasta.h */,
+				E3D33F6F1CE8DE0F00EA2F8C /* Fasta.h */,
+			);
+			name = Fasta;
+			sourceTree = "<group>";
+		};
+		E3D33F6B1CE8D79900EA2F8C /* ConvertSequence */ = {
+			isa = PBXGroup;
+			children = (
+				E3D33F6C1CE8D7D300EA2F8C /* ConvertSequence.h */,
+				E3D33F6D1CE8D7F500EA2F8C /* DNASequence.h */,
+				E3D33F6E1CE8D80900EA2F8C /* RNASequence.h */,
+			);
+			name = ConvertSequence;
+			sourceTree = "<group>";
+		};
+		E3D33F701CE8DF1B00EA2F8C /* FastaQ */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FastaQ;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +275,7 @@
 				E33C9F911C6783EF003D7598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
